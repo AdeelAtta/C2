@@ -162,8 +162,12 @@ width: 90%;
 <body>
   <main>
     <section class="card">
-      <img class="product_image" src="./images/image-product-desktop.jpg" alt="Image for Perfume product" />
-      <img class="product_image_mobile" src="./images/image-product-mobile.jpg" alt="Image for Perfume product" />
+      <picture class="product_image">
+            <source media="(min-width: 650px)" srcset="./images/image-product-desktop.jpg">
+        <img class="product_image_mobile" src="./images/image-product-mobile.jpg" alt="image for perfume product" />
+      </picture>
+     
+      
       <div class="product_detail">
         <p class="product_cat">PERFUME</p>
         <h1 class="product_name">Gabrielle Essence Eau De Parfum</h1>
